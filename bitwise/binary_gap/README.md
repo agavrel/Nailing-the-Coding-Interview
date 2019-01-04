@@ -1,6 +1,6 @@
 ### Problem
 
-*Write a function that, given an integer n, returns the longest gap of unset bits surrounded by set bits
+*Write a function that, given an integer n, returns the longest gap of unset bits surrounded by set bits*
 
 ##### Prototype
 ```c++

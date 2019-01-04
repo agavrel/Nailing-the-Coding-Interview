@@ -119,7 +119,7 @@ Although it hurts a little bit readability, we can notice that '(' and ')' are a
 
 Dividing by 32 will allow us to store directly 1, 2 and 3 as (40 or 41) / 32 = 1, (91 or 93) / 32 = 2 and (123 or 125) / 32 = 3.
 
-```cs
+```cs     
 public int is_correctly_formatted(string S) {
     char[] str = S.ToCharArray();
     Stack<int> stack = new Stack<int>();
@@ -133,9 +133,9 @@ public int is_correctly_formatted(string S) {
     }
     return {stuff};
 }
-​```
+​```               
 
-D - Now when facing a closing bracket we have to check that :
+D) Now when facing a closing bracket we have to check that :
 
 a) the Stack is not empty with 'stack.Count == 0' and
 
