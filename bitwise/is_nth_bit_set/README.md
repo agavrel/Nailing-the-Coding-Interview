@@ -1,3 +1,11 @@
+###Out of the Blue
+
+#####Multithreading is the Answer, what is the Question
+
+<a href="https://www.youtube.com/watch?v=GNw3RXr-VJk
+" target="_blank"><img src="http://img.youtube.com/vi/GNw3RXr-VJk/0.jpg"
+alt="C++ conference on youtube" width="240" height="180" border="10" /></a>
+
 ### Problem
 
 *Write a function that, given an integer 'value', returns true or false if the value of the 'n'th bit is set.*

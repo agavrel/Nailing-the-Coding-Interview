@@ -1,3 +1,11 @@
+###Out of the Blue
+
+#####Nir Friedman “Understanding Optimizers: Helping the Compiler Help You”
+
+<a href="https://www.youtube.com/watch?v=8nyq8SNUTSc
+" target="_blank"><img src="http://img.youtube.com/vi/8nyq8SNUTSc/0.jpg"
+alt="Nir Friedman on youtube" width="240" height="180" border="10" /></a>
+
 ### Problem
 
 *Write a function that, given an array of integer containing integers that can be paired with another of the same value except one with a single value, returns the value of the one that can't be paired.*
