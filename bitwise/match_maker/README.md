@@ -1,6 +1,6 @@
-###Out of the Blue
+### Out of the Blue
 
-#####Anri Shyness Boy
+##### Anri Shyness Boy
 
 <a href="https://www.youtube.com/watch?v=ckRSn2zWt_o
 " target="_blank"><img src="http://img.youtube.com/vi/ckRSn2zWt_o/0.jpg"

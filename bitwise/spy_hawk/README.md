@@ -1,6 +1,6 @@
-###Out of the Blue
+### Out of the Blue
 
-#####Money as Debt
+##### Money as Debt
 *Central banks, perhaps the biggest curse of our century?*
 
 <a href="https://www.youtube.com/watch?v=2nBPN-MKefA

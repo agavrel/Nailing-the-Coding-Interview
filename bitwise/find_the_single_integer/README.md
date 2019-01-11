@@ -1,6 +1,6 @@
-###Out of the Blue
+### Out of the Blue
 
-#####Nir Friedman “Understanding Optimizers: Helping the Compiler Help You”
+##### Nir Friedman “Understanding Optimizers: Helping the Compiler Help You”
 
 <a href="https://www.youtube.com/watch?v=8nyq8SNUTSc
 " target="_blank"><img src="http://img.youtube.com/vi/8nyq8SNUTSc/0.jpg"

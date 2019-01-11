@@ -1,6 +1,6 @@
 ### Out of the Blue
 
-#####Fast inverse square root
+##### Fast inverse square root
 The following code is the [fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root) implementation from Quake III Arena, stripped of C preprocessor directives, but including the exact original comment text:
 ```c
 float Q_rsqrt( float number )
