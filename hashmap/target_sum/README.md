@@ -23,7 +23,7 @@ void sse_original(float* a, uint32_t N)
 {
   // We assume N % 4 == 0.
   int nb_iters = N / 4;
-  \__m128* ptr = (\__m128*)a;
+  __m128* ptr = (__m128*)a;
 
   for (uint32_t i = 0; i < nb_iters; ++i, ++ptr, a += 4)
     _mm_store_ps(a, _mm_sqrt_ps(*ptr));
@@ -31,7 +31,7 @@ void sse_original(float* a, uint32_t N)
 
 void sse(float* a, uint32_t N)
 {
-    \__m128* ptr = (\__m128*)a; // use 128 bits register
+    __m128* ptr = (__m128*)a; // use 128 bits register
 
     do
     {
@@ -89,7 +89,7 @@ int main(int argc, char** argv)
 *g++ sse_benchmark.cpp && ./a.out 64000000*
 
 * No SSE: 255000 clocks  
-* Original SSE: 41500 clocks // credit : https://felix.abecassis.me/2011/09/cpp-getting-started-with-sse/  
+* Original SSE: 41500 clocks // credit : [Félix Abecassis](https://felix.abecassis.me/2011/09/cpp-getting-started-with-sse/)  
 * Optimized SSE: 38500 clocks // credit : agavrel, 3000 clocks saved, 8% increased speed  
 
 ---
