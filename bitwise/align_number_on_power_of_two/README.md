@@ -1,3 +1,11 @@
+### Out of the Blue
+
+##### Best Programming Blogs
+
+* http://cliffc.org/blog
+* https://lemire.me/blog
+* http://www.agner.org/optimize/
+
 ### Problem
 
 *Write a function that, given a size_t n, align it on 32 bits.*
