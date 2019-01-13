@@ -102,12 +102,23 @@ int main(int argc, char** argv)
 * Optimized SSE: 20000 clocks  
 
 
-##### Resulting assembly:
-```c
-sqrtps	(%rax), %xmm0
-addq	$16, %rax
-movaps	%xmm0, -16(%rax)
-cmpq	%rax, %rdx
+##### Resulting assembly ouput of the sse critical loops:
+```assembly
+.ORIGINAL_SSE
+    addl	$1, %edx         // this increase time by 8-10% compared to optimized version below
+	sqrtps	(%rax), %xmm0
+	addq	$16, %rax
+	movaps	%xmm0, -16(%rax)
+	cmpl	%r13d, %edx
+	jb	.ORIGINAL_SSE        // jump_below
+
+
+.OPTIMIZED_SSE
+    sqrtps	(%rax), %xmm0
+    addq	$16, %rax
+    movaps	%xmm0, -16(%rax)
+    cmpq	%rax, %rdx         
+    jne     .OPTIMIZED_SSE   // jump_not_equal will be more effective
 ```
 
 
