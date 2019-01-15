@@ -63,6 +63,6 @@ vector<int> rotate_array(vector<int> a, int n) {
     vector<int> b(std::next(a.begin(),n),std::next(a.begin(), n + len));
     return b;
 }
-
-*ps: probably not the most optimized (but still working), send me an email / pull request if you have better*
 ```
+
+*PS: Probably not the most optimized (but still working) algo, send me an email / pull request if you know a better one*

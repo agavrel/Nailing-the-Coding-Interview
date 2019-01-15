@@ -48,7 +48,7 @@ class Solution { public int solution(int[] A); }
 </pre>
 
 ### C# Solution
-```c++
+```cs
 using System;
 ​
 class Solution {
