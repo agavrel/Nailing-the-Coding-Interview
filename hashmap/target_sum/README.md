@@ -48,9 +48,9 @@ uint32_t		ft_align_mask(uint32_t size, uint32_t mask)
 
 int main(int argc, char** argv)
 {
-    if (argc != 2)
+    /*if (argc != 2)
      return 1;
-    uint32_t N = ft_align_mask(atoi(argv[1]), 3); // align N on 4
+    uint32_t N = ft_align_mask(atoi(argv[1]), 3); // align N on 4*/
 
     float* a;
     posix_memalign((void**)&a, 16,  N * sizeof(float));
@@ -100,6 +100,7 @@ int main(int argc, char** argv)
 * No SSE: 198000 clocks  
 * Original SSE: 22000 clocks  
 * Optimized SSE: 20000 clocks  
+* Optimized SSE 256 bits registers : 19400
 
 
 ##### Resulting assembly ouput of the sse critical loops:
@@ -121,7 +122,7 @@ int main(int argc, char** argv)
     jne     .OPTIMIZED_SSE   // jump_not_equal will be more effective
 ```
 
-
+*PS: To know if computer support AVX2 (Advanced Vector Extensions) instructions: grep avx2 /proc/cpuinfo*
 
 ### Problem
 

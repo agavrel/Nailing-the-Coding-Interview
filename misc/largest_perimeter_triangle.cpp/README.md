@@ -1,6 +1,6 @@
 ### Out of the Blue
 
-##### MBob Steagall “Fast Conversion From UTF-8 with C++, DFAs, and SSE Intrinsics
+##### Bob Steagall “Fast Conversion From UTF-8 with C++, DFAs, and SSE Intrinsics
 
 <a href="https://www.youtube.com/watch?v=h5oczBeib_M
 " target="_blank"><img src="http://img.youtube.com/vi/h5oczBeib_M/0.jpg"
