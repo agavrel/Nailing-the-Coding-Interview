@@ -17,7 +17,7 @@
 
 ##### Prototype
 ```c++
-vector<int> rotLeft(vector<int> a, int n) {;}
+vector<int> rotate_array(vector<int> a, int n) {;}
 ```
 
 ##### For example

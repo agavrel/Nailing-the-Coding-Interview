@@ -33,6 +33,7 @@ constexpr auto lowercase_mask() {
     for(uint8_t i = 0x41; i <  0x5B; ++i) {
         v[i] = 0x20;
     }
+
     return v; // generate an array with mask for uppercase letters
 }
 
@@ -40,7 +41,7 @@ string str_to_lowercase(string& str) {
     constexpr auto v = lowercase_mask();
 
     for (char& c : str)
-        c = c | v[c];
+        c |= v[c];
 
     return str;
 }
@@ -67,10 +68,25 @@ string str_to_lowercase4(string& str) {
     return str;
 }
 
+char agavrel_tolower(char& c) {
+    constexpr auto v = lowercase_mask();
+
+    return c | v[c];
+}
+
+#include <algorithm>
+string str_to_lowercase5(string& data) {
+    std::transform(data.begin(), data.end(), data.begin(), ::agavrel_tolower);
+
+    return data;
+}
+
+
 int main(void)
 {
     size_t N = 3000000;
     vector <string> s;
+    s.push_back(generate_random_string(N));
     s.push_back(generate_random_string(N));
     s.push_back(generate_random_string(N));
     s.push_back(generate_random_string(N));
@@ -80,6 +96,7 @@ int main(void)
     std::cout << timeFuncInvocation(str_to_lowercase2, s[1]).count() << std::endl;
     std::cout << timeFuncInvocation(str_to_lowercase3, s[2]).count() << std::endl;
     std::cout << timeFuncInvocation(str_to_lowercase4, s[3]).count() << std::endl;
+    std::cout << timeFuncInvocation(str_to_lowercase5, s[4]).count() << std::endl;
 //    for (const string& str : s)
 //    cout << str << endl;
 //    cout << s[3] << endl;
@@ -98,4 +115,5 @@ and
 63
 147
 63
+349
 */

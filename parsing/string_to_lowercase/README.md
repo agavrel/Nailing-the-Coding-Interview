@@ -14,6 +14,8 @@
 > “Nowadays people know the price of everything and the value of nothing.”  
 > “Never marry at all, Dorian. Men marry because they are tired, women, because they are curious: both are disappointed.”  
 
+---
+
 ### Problem
 *Write a function that, given a string, returns the string with all uppercase letters transformed into lowercase letters.*
 
