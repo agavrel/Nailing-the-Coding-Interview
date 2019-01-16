@@ -47,7 +47,7 @@ string str_to_lowercase(string& str) {
 
 string str_to_lowercase2(string& str) {
     for (char& c : str)
-        c = toupper(c);
+        c = tolower(c);
 
     return str;
 }
