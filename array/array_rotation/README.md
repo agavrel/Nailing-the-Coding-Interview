@@ -9,19 +9,19 @@
 
 ### Problem
 
-*Write a function that, given an array of integers, return the array with values rotated on the left side by n.*
+*Write a function that, given an array of integers, return the array with values rotated by n.*
 
 ##### Assumptions
 
-* If n is negative then it will rotate on the right.
+* If n is negative then it will rotate through the left, if n is positive it will rotate through the right side.
 
 ##### Prototype
 ```c++
-vector<int> rotate_array(vector<int> a, int n) {;}
+void rotate_array(vector<int>& a, int n) {;}
 ```
 
 ##### For example
-*If the vector contains {3, 5, 9, 4} and n = 7 then it will become a vector containing {4, 3, 5, 9}*
+*If the vector contains {3, 5, 9, 4} and n = -7 (left rotation) then it will become a vector containing {4, 3, 5, 9}*
 
 <pre>
 
@@ -56,13 +56,19 @@ vector<int> rotate_array(vector<int> a, int n) {;}
 
 ### C++ Solution
 ```c++
-vector<int> rotate_array(vector<int> a, int n) {
-    int len = a.size();
-    a.reserve(len << 1);
-    std::copy_n(a.begin(), len << 1, std::back_inserter(a));
-    vector<int> b(std::next(a.begin(),n),std::next(a.begin(), n + len));
-    return b;
+void rotate_array(vector<int>& a, int n) {
+    if (n == 0 || a.size() == 0)
+            return;
+    if (n > 0) // right side rotation
+    {
+        n %= a.size();
+        reverse(a.begin(),a.end());
+        reverse(a.begin(),a.begin() + n);
+        reverse(a.begin() + n,a.end());
+    }   
+    else // left side rotation
+        std::rotate(a.begin(), a.begin() - n, a.end());
 }
 ```
 
-*PS: Probably not the most optimized (but still working) algo, send me an email / pull request if you know a better one*
+*Runs in O (1)*
