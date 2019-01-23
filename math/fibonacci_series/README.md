@@ -10,7 +10,7 @@ int fibonacci(int n) { ;}
 ##### For example
 * Consider n = 6, the function should return 8.
 
-##### Assumptiom
+##### Assumptions
 * 0 <= n <= 46
 
 <pre>
