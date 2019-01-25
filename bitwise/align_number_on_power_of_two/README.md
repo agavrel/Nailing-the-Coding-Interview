@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### Best Programming Blogs
 

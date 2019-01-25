@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### Rich Dad Poor Dad: What The Rich Teach Their Kids About Money - Robert T.Kiyosaki
 > Being a product of two strong dads allowed me the luxury of observing the effects different thoughts have on one's life.  

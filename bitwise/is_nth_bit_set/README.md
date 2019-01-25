@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### Multithreading is the Answer, what is the Question
 

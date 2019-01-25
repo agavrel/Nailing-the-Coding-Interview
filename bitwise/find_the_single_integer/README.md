@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### Nir Friedman “Understanding Optimizers: Helping the Compiler Help You”
 

@@ -77,5 +77,3 @@ int reverse_integer(int x) {
     return rev * sign;
 }
 ```
-
-*This search will perform in O(log N) in the worst case because at each jump you remove half of the possibilities*

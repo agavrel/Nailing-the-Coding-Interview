@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### Bob Steagall “Fast Conversion From UTF-8 with C++, DFAs, and SSE Intrinsics
 

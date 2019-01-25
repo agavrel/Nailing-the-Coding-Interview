@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### 이루마 - 샤콘느
 

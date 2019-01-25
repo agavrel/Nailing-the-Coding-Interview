@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### Money as Debt
 *Central banks, perhaps the biggest curse of our century?*

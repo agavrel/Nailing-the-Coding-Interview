@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### My Inspirational Quotes Collections  
 ###### Elon Musk

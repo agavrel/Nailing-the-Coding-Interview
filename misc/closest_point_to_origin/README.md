@@ -1,4 +1,4 @@
-### Out of the Blue
+### Out of Blue
 
 ##### Fondation "The Psychohistorians" Summary - Isaac Asimov
 >  This part is original to the 1951 book version and takes place in 0 F.E. ("Foundation Era"). The story begins on Trantor, the capital of the 12,000-year-old Galactic Empire, a powerful but slowly decaying empire. Hari Seldon, a mathematician and psychologist, has developed psychohistory, a new field of science and psychology that equates all possibilities in large societies to mathematics, allowing for the prediction of future events.
