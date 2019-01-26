@@ -94,7 +94,7 @@ vector<vector<int>> sum_of_three(vector<int>& array) {
 #include <vector>
 #define TARGET 0
 
-vector<vector<int>> threeSum(vector<int>& array) {
+vector<vector<int>> sum_of_three(vector<int>& array) {
     if (array.size() == 0) return {};
 
     int begin, end, sum;

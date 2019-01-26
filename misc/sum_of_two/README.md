@@ -134,11 +134,12 @@ int main(int argc, char** argv)
 
 ##### Prototype
 ```c++
-vector<int> target_index(vector<int>& arr, int target){;}
+vector<int> sum_of_two(vector<int>& v, int target) {
+;}
 ```
 
 ##### For example
-*If vector<int>& arr contains {3, 5, 9, 4} and the target is 12 then it should return a vector containing {3, 9}*
+*If vector<int>& v contains {3, 5, 9, 4} and the target is 12 then it should return a vector containing {3, 9}*
 
 <pre>
 
