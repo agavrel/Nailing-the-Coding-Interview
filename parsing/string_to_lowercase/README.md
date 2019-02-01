@@ -14,6 +14,9 @@
 > “Nowadays people know the price of everything and the value of nothing.”  
 > “Never marry at all, Dorian. Men marry because they are tired, women, because they are curious: both are disappointed.”  
 
+###### Fyodor Dostoevsky
+> “While nothing is easier than to denounce the evildoer, nothing is more difficult than to understand him.”
+
 ---
 
 ### Problem
