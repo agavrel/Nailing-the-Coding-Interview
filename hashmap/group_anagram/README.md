@@ -86,4 +86,4 @@ vector<vector<string>> group_anagrams(vector<string>& strs) {
 }
 ```
 
-![Speed](./group_anagrams.jpg)
+![Speed](https://raw.githubusercontent.com/agavrel/Nailing-the-Coding-Interview/master/hashmap/group_anagram/group_anagrams.png)
