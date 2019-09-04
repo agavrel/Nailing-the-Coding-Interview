@@ -92,6 +92,94 @@ int32_t minPowersOfTwo(int32_t n) {
 }
 ```
 
+### Another solution
+
+This solution is 8% faster:  
+
+```c
+int min_num_pow2(int n) {
+	int ans = 0;
+	int len = 0;
+
+	for (int i = 0; i < 32; ++i) {
+		if (n & (1 << i)) {
+			++len;
+
+		}
+		else if (len > 0) {
+	  		++ans;
+	  		len = len == 1 ? 0 : 1;
+		}
+	}
+
+	if (len > 1)
+		++ans; //Check for overflow.
+
+	return ans;
+}
+```
+
+### Another solution: Quadratic equation
+
+I found this interesting solution from another fellow developer (originally written in java):
+
+As 2 n^2 + n = v  
+We can then write that 2 n^2 + n - v = 0  
+We just have to solve the quadratic equation  
+
+```c
+#include <math.h>
+
+double getMaxFromDoubleType(double a, double b) {
+	return a > b ? a : b;
+}
+
+// return the results for √(b2 − 4ac)
+double root(double a, double b, double c){
+	return sqrt((b * b) - (4 * a * c));
+}
+
+// *return the solutions of the quadratic equation for x = −b ± √(b2 − 4ac) / 2a. *
+void quadratic(double a, double b, double c, double result[2]){
+	double sqrt = root(a,b,c);
+	double t2a = 2 * a;
+	double x = (-b + sqrt) / t2a;
+	double y = (-b - sqrt) / t2a;
+
+	result[0] = x;
+	result[1] = y;
+}
+
+// 2 n^2 + n = v -> 2 n^2 + n - v = 0
+void possibleNumbers(int v, double *result) {
+	const int a = 2;
+	const int b = 1;
+	const int c = -1 * v;
+	quadratic(a,b,c, result);
+}
+
+
+int minNum(int v){
+	double result[2];
+	possibleNumbers(v, &result);
+	int x = (int)getMaxFromDoubleType(result[0], result[1]);
+	return x;
+}
+```
+
+But I noticed that since s y will always be negative it can be discarded.  
+Hence we do not neet to get the maximum number
+Some refactoring later:
+
+```c
+#include <math.h>
+int minPowerTwo2(int n){ return (-1 + sqrt(1 + (8 * n))) / 2; }
+```
+
+with gcc -O2 count_to_pw_of_2.c -lm  && ./a.out it is about the same speed as the one with the moving mask on the 32 bits.
+
+
+
 ### Challenge
 Solve this problem to make it work with negative integers
 
