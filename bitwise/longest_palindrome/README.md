@@ -68,13 +68,13 @@ int longest_palindrome(string s) {
 
     for (const char c : s)
     {
-        bool letter = letters & ((__int128)1 << c); // used to check if the letter had already appeared and was unpaired.
-        letters ^= ((__int128)1 << c);
+        bool letter = letters & ((__int128)1 << c); // used to check if the character had already appeared and was unpaired.
+        letters ^= ((__int128)1 << c); // this will switch the bit corresponding to the character
         result += letter; // we add 2 to the result, but instead of operating a left shift during the loop we perform it during the return.
-        unpaired_letter += !letter; // if there was no letter previously it will add one
-        unpaired_letter -= letter; // if there was already one, we remove one since the letter is now paired with a former one.
+        unpaired_letter += !letter; // if there was no character previously it will add one
+        unpaired_letter -= letter; // if there was already one, we remove one since the character is now paired with a former one.
     }
-    return (result << 1) | !!unpaired_letter; // if any letter was left without another one that matches it will add one.
+    return (result << 1) | !!unpaired_letter; // if any character was left without another one that matches it will add one.
 }
 ```
 
