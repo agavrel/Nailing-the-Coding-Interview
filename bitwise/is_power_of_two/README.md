@@ -58,3 +58,14 @@ For example with n = 8 it will be ```1000 & 0111``` which is equal to 0.*
 *We use the exclamation dot (not instruction) to reverse 0 to 1 and (x != 0) to 1.*
 
 *lso n > 0 is not necessary in this case as if n = 0 it will underflow resulting in 0 & unsigned int*
+
+### Solution using builtin instructions
+```c++
+bool    is_power_of_two(uint32_t n)
+{
+	return n > 0 && (__builtin_clz(n) + __builtin_ctz(n)) == 31;
+}
+```
+
+*__builtin_clz will return the count of leading zeroes (from left until 1)*    
+*__builtin_ctz will return the count of trailing zeroes (from right until right)*  
