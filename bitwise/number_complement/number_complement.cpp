@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <random>
 #include <cstdlib> // for rand()
-
+#include <vector>
 // g++ -masm=intel a.cpp && ./a.out
 
 using namespace std;
@@ -12,6 +12,102 @@ using namespace std;
 // https://leetcode.com/problems/number-complement/
 // Given a positive integer, output its complement number.
 // The complement strategy is to flip the bits of its binary representation.
+
+// 	vector<int> v = {7, 13,17,23,29};
+
+
+
+
+// mov esi, 1 contain vector index
+//mov rdi, QWORD PTR [rbp-0x18]
+// call   0x555555554ddc <_ZNSt6vectorIiSaIiEEixEm>  call vector that will return memory address of v[1] in eax
+// mov    eax,DWORD PTR [rax]     mov the value at adresse rax to eax
+
+
+
+// lea r8d, [rbx] rbx contain vector size
+// lea r8d, [rdx] rdx contain value of i
+
+// vector is either at rcx or rdi
+
+class TestVec {
+public:
+    int foo(vector<int>& v, int i) {
+        __asm__ __volatile__ (R"(
+               lea rax, [rsi + 32]
+               mov eax, [rax + rdx ]
+       ;)");
+    }
+};
+
+/*
+//long d = (long)(v.data());
+
+//int c = 5;
+//c = v[0] + d % 30;
+
+//    v[1] = 5;
+
+
+
+lea rax, [rsi + 32]
+mov rax, [rax + rdx ]
+leave
+ret
+
+or
+
+lea rax, [rbp + 64]
+mov rax, [rax + rdx ]
+leave
+ret
+*/
+
+//was working without class
+/*
+__asm__ (R"(
+
+       lea rax, [rdi + 32]
+       mov rax, [rax + rdx ]
+
+
+
+;)");
+
+*/
+
+/*
+/*
+"(xor eax, eax;)");
+__asm__ __volatile__ (R"(lea rax, [rdi + 32 ];)");
+__asm__ __volatile__ (R"(mov rax, [rax + rdx];
+*/
+/*
+sub rdi, [rdx]
+lea r8d, [rdi- [rdx]]
+mov eax, [r8d]
+
+lea eax, [rbp-0x20- ]
+mov rax,QWORD PTR [rbp-0x20]
+    mov eax, DWORD PTR [rax]
+   not eax;
+
+
+int e = 0;
+//        long arr[2];
+long d = (long)(v.data());
+//        printf("%0X\n", d);
+int c = d % 30;
+
+//        bool a = true; // contained in esi
+//    cout << d << endl;
+int b = c + v[1];
+//cout << b << endl;
+if (v[1] == 0x97)
+    v[1] == 4;
+//int c = 0x56 + (int)d;
+//        cout << "hey" << endl;
+*/
 
 int findComplement1(int num) {
     unsigned mask = ~0;
@@ -118,17 +214,24 @@ float benchmark(int (*f)(int)) {
 
 
 int main() {
-	srand (time (NULL));
+	//srand (time (NULL));
+	//vector<int> v = {7, rand(),17,23,29,85};
+    vector<int> v = {7, rand(),17,279,29,85};
+    for (int i = 0; i < 100; i+=4)
+        printf("%0d\n", Solution().foo(v, i));
+    cout << v[0] << endl;
+//    cout << v[3] << endl;
+/*	printf("%d\n", foo(v));
+
 
     int (*func_ptr[])(int) = {&findComplement1, &findComplement2, &findComplement3, &findComplement4};
     int len = sizeof(func_ptr) / sizeof(void*);
-
+*/
 /*    for (int a = 0; a < 10; a++) {
         cout << "Testing with: " << a << endl;
         for (int i = 0; i < len; i++)
             cout << func_ptr[i](a) << endl;
     }
-*/
     int battle = 100;
     float time_elapsed[len];
     int score[len] = {};
@@ -152,6 +255,7 @@ int main() {
     for (int i = 0; i < len; ++i) {
         printf("Function %d scored %d\n", i, score[i]);
     }
+*/
 
 /*
     Function 0 scored 0
