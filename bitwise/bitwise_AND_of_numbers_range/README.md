@@ -7,7 +7,7 @@
 alt="Chrono Trigger Best Ending on youtube" width="240" height="180" border="10" /></a>
 
 
-
+---
 ### Problem
 
 *Given a range [m, n] where 0 <= m <= n <= 2147483647, return the bitwise AND of all numbers in this range, inclusive.*  
@@ -66,7 +66,7 @@ int rangeBitwiseAnd(int m, int n)
 
 </pre>
 
-
+---
 ### Solution
 
 See .cpp file for explanations

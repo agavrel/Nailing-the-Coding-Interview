@@ -52,14 +52,15 @@ Name | How Interesting | Notes
 [Spy Hawk](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/spy_hawk) | :star::star::star::star::star: | Bitset
 [Reverse 32 bits](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/reverse_bits) | :star::star::star::star::star: | Lookup Table, Shifts and Masks, Use of Carry Flag (assembly)
 [Reverse 8 bits](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/symetric_bits) | :star::star::star::star::star: | Lookup Table, Shifts and Masks, Use of Carry Flag (assembly)
+[INT to HEX](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/int_to_hex) | :star::star::star: | printf %x or print_base_16 implementation, easier in C++ thanks to std::string
 [Number of Common Letters](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/number_of_common_letters) | :star::star::star: | Bitwise Approach
 [Least Operators to Express a Number](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/least_operators_to_express_number) | :star::star::star: | Binary Representation and Mathematics
 [Match Maker](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/match_maker) | :star::star::star::star: | Algorithm that I coined myself, no solution published
 [Binary Gap](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/binary_gap) | :star::star::star::star: | Shifts and Masks
 [Align Number on Power of Two](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/align_number_on_power_of_two) | :star::star::star::star::star: | Shifts and Masks
 [Longest Palindrome](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/longest_palindrome) | :star: | Shifts and Masks
-[Number Complement](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/number_complement) | :star::star::star::star::star: | Excellent in-depth Algorithm
-[Bitwise AND of Number Range](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/bitwise_AND_of_numbers_range) | :star::star::star::star::star: | Excellent in-depth Algorithm to apply Mathematics to bitwise
+[Number Complement](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/number_complement) | :two_hearts: | Excellent in-depth Algorithm
+[Bitwise AND of Number Range](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/bitwise_AND_of_numbers_range) | :two_hearts: | Excellent in-depth Algorithm to apply Mathematics to bitwise
 [Repeated DNA Sequences](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/repeated_dna_sequences) | :star::star::star::star: | Bitwise Approach
 
 
