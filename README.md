@@ -30,7 +30,7 @@
 While they are all interesting, they serve different purposes. Depending on which kind of career you are looking for, you might want to focus more specifically in one area or another
 
 Category | Purpose
----|---|---|---
+---|---|
 [Well-Known Algorithms](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/misc) | Starting Point for Interviews
 [Bitwise](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise)| Best for those looking for careers in Embedded Systems
 [Mathematics and Logical Sequences](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/math) | Mathematics is ideal for those interested in working on Graphic Motors
@@ -45,7 +45,7 @@ Prime Numbers | Excellent for Cryptography as Prime Numbers allow to compute uni
 ### 0x03 - Bitwise Category
 
 Name | How Interesting | Notes
----|---|---|---
+---|---|---
 [Is Power of Two](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/is_power_of_two) | :star::star::star::star::star: | Understanding Binary Representation
 [Find the Single Integer](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/find_the_single_integer) | :star: | Understanding Binary Representation
 [Is Nth Bit Set](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/bitwise/is_nth_bit_set) | :star::star: | Binary Representation
@@ -68,7 +68,7 @@ Name | How Interesting | Notes
 ### 0x04 - Mathematics and Logical Sequences
 
 Name | How Interesting | Notes
----|---|---|---
+---|---|---
 [The Dancer](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/math/the_dancer) | :star::star::star::star: | Do you see a Pattern ?
 [Fibonacci Series](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/math/fibonacci_series) | :star: | Top 10 interview questions in Finance
 [Binary Search](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/math/binary_search) | :star: | Also Top 10 interview questions in Finance
@@ -78,7 +78,7 @@ Name | How Interesting | Notes
 ---
 ### 0x05 - Linked List
 Name | How Interesting | Notes
----|---|---|---
+---|---|---
 [Merge Two Sorted Lists](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/list/merge_two_sorted_lists) | :star::star::star: | Sort Algorithms
 [Merge k Sorted Lists](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/list/merge_k_sorted_lists) | :star::star::star::star::star: | Sort Algorithms
 
@@ -86,7 +86,7 @@ Name | How Interesting | Notes
 ---
 ### 0x06 - Hashmap
 Name | How Interesting | Notes
----|---|---|---
+---|---|---
 [Group Anagram](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/hashmap/group_anagram) | :star::star::star: | How about implementing the Hash function yourself ?
 [Target Sum](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/hashmap/target_sum) | :star::star::star::star: | Beware of Integer overflow
 
@@ -95,7 +95,7 @@ Name | How Interesting | Notes
 ### 0x07 - Greedy
 
 Name | How Interesting | Notes
----|---|---|---
+---|---|---
 [Change Problem](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/greedy/change_problem) | :star: | If you ever have to code the program of an ATM
 
 
@@ -103,7 +103,7 @@ Name | How Interesting | Notes
 ### 0x08 - Parsing
 
 Name | How Interesting | Notes
----|---|---|---
+---|---|---
 [Reverse Integer Digits](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/parsing/reverse_integer) | :star: | Not the most exciting one
 [https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/parsing/string_to_lowercase](https://github.com/agavrel/Nailing-the-Coding-Interview/tree/master/parsing/string_to_lowercase) | :star::star::star: | [Best Way to get Flamed on StackOverflow](https://stackoverflow.com/questions/61148630/calculate-the-number-of-times-each-letter-appears-in-a-string/61149709#61149709)
 
